@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy valentines day nigu</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            margin-top: 700px;
+            margin-bottom: 50px;
+            align-items: center;
+            justify-content: space-between;
+            width: 90%;
+            max-width: 1200px;
+        }
+        .left {
+            flex: 1;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2em;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            margin-bottom: 50px;
+        }
+        .slider {
+            width: 80%;
+            height: 50vh;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            position: relative;
+            margin: 20px auto;
+        }
+        .slides {
+            display: flex;
+            transition: transform 1.5s ease-in-out;
+            width: 100%;
+        }
+        .slides img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none;
+        }
+        .slides img.active {
+            display: block;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+        .prev { left: 10px; }
+        .next { right: 10px; }
+        .right {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+        .right img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .right img:hover {
+            transform: scale(1.2);
+        }
+        .letter {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 1.3em;
+            color: #333;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            width: 70%;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.5;
+        }
+        .small-cats {
+            margin-top: 20px;
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .small-cats img {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        .small-cats img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>IS THIS A PHOTO ALBUM??!?!?! OH MY GODDOO 😺</h1>
+            <div class="slider">
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <div class="slides">
+                    <img src="assets/img5.jpg" alt="Cat 1" class="active">
+                    <img src="assets/img6.jpg" alt="Cat 2">
+                    <img src="assets/img7.jpg" alt="Cat 3">
+                    <img src="assets/img8.jpg" alt="Cat 4">
+                    <img src="assets/img9.jpg" alt="Cat 5">
+                    <img src="assets/img10.jpg" alt="Cat 6">
+                    <img src="assets/img11.jpg" alt="Cat 7">
+                    <img src="assets/img12.jpg" alt="Cat 8">
+                    <img src="assets/img13.jpg" alt="Cat 9">
+                    <img src="assets/img14.jpg" alt="Cat 10">
+                </div>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </div>
+        <div class="right">
+            <img src="assets/img1.jpg" alt="Collage 1">
+            <img src="assets/img2.jpg" alt="Collage 2">
+            <img src="assets/img3.jpg" alt="Collage 3">
+            <img src="assets/img4.jpg" alt="Collage 4">
+        </div>
+    </div>
+    
+    <div class="letter">
+        <h1 style="color: #333;">PREM PATRA with the right freakuency</h1>
+        <p>My dearest Billu Supari,</p>
+        <p>You make my heart boing boing and I feel very Aahun Aahun around you...I wanna have lots of pijjos and kala khattas (😏) with you and pet stupid cats along the way<br>If you were a fis i would eat fis fingers everyday :3</p>
+        <p>"Hallo, everynyan! How are you? Fine, shank you."
+            <br>
+            "OH MY GAH!"
+            <br>
+            "I wish I were a bird, so I could poop on ur shoulders"
+            <br>
+            "AMERICA YAAA??!"
+            <br>
+            "My ball is going to America."
+            <br>
+            "A bird?"
+            "...Your face sorta looks like... my favorite thing in the whole world. My stimkypoopyriri."
+            <br>
+            "HMMMMMMMMMMNNNNNN...!!LOVEULOTS<3
+            </p>
+        <p>Your biggest fan,</p>
+        <p>shitty</p>
+    </div>
+    
+    <div class="small-cats">
+        <img src="assets/letterS.webp" alt="Small Cat 1">
+        <img src="assets/letterE1.png" alt="Small Cat 2">
+        <img src="assets/letterN.webp" alt="Small Cat 3">
+        <img src="assets/letterD.webp" alt="Small Cat 4">
+        <img src="assets/letterF.png" alt="Small Cat 5">
+        <img src="assets/letterE.png" alt="Small Cat 6">
+        <img src="assets/letterE.png" alt="Small Cat 7">
+        <img src="assets/letterF.png" alt="Small Cat 8">
+    </div>
+    
+    <script>
+        let index = 0;
+        const images = document.querySelectorAll(".slides img");
+        function moveSlide(step) {
+            images[index].classList.remove("active");
+            index += step;
+            if (index < 0) index = images.length - 1;
+            if (index >= images.length) index = 0;
+            images[index].classList.add("active");
+        }
+    </script>
+    <script>
+        var password = "sixtynine"; // Set your password here
+        var userInput = prompt("Enter Password:");
+        
+        if (userInput === password) {
+            document.getElementById("content").style.display = "block";
+        } else {
+            document.body.innerHTML = "<h1>Access Denied</h1>";
+        }
+    </script>
+</body>
+</html>
